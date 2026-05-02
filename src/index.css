@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-secondary: #f43f5e;
+  --color-dark-bg: #0f172a;
+  --color-dark-card: #1e293b;
+  --color-light-bg: #f8fafc;
+  --color-light-card: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-light-bg text-slate-900 transition-colors duration-200;
+  }
+  
+  body.dark {
+    @apply bg-dark-bg text-slate-100;
+  }
+}
